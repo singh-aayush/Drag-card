@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'QuickSand', cursive;
+}
+
+body{
+    height: 100vh;
+    /* width: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/background-image.avif);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card{
+    max-width: 380px;
+    /* height: 600px; */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1.5rem;
+    position: absolute;
+    padding: 1rem 1.5rem;
+text-align: center;
+box-shadow: 0 0 15px #000;
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(7px);
+border: 1px solid #fff;
+}
+
+.card header{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    cursor: all-scroll;
+}
+
+.card .card-body .card-image{
+    padding: 1.5rem 0;
+}
+
+.card .card-body .card-image img{
+max-width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 1px solid #fff;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.card .card-body .card-description{
+    padding-bottom: 1.5rem;
+}
+
+.card .card-body  .card-description> h3{
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card .card-body .card-description>p{
+    color: #fff;
+    text-align: left;
+    line-height: 1.3rem;
+}
+
+.card .card-body .card-description>p>a{
+background-color: #484343;
+padding: 3px 7px;
+border-radius: 7px;
+color: #fff;
+}
+
+.card .card-body{
+    border-bottom: 1px solid #fff;
+}
+
+.card footer{
+    padding: 1.5rem 0 .7rem 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.card footer button{
+    padding: 7px 12px;
+border-radius: 4px;
+outline: none;
+border: 2px solid #fff;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.card footer button.linkdin{
+    background-color: #f54627;
+    color: #141414;
+    font-weight: 600;
+    /* cursor: pointer; */
+}
+
+.card footer button.reset{
+    background-color: #ffab19;
+    color: #141414;
+    font-weight: 600;
+}
+
+.card footer button.linkdin:hover, .card footer button.reset:hover{
+    color: #fff;
+    border-color: #000;
+}
+
